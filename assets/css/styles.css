@@ -1,0 +1,64 @@
+/*GENERAL*/
+
+body {
+	background-color: #120000;
+	margin: 0 auto;
+}
+
+h1, h3{
+	font-family: Helvetica, Arial;
+	color: #fff;
+}
+
+
+/*=======HOMEPAGE======*/
+
+.jumpmanCTA{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	max-width: 50%;
+	-webkit-animation: colorPulse 2s infinite;
+}
+
+
+	
+
+
+/*CSS Animation*/
+@-webkit-keyframes colorPulse{
+	0% {
+		-webkit-filter: grayscale(0);
+	}
+	10% {
+		-webkit-filter: grayscale(0.2);
+	}
+	20% {
+		-webkit-filter: grayscale(0.4);
+	}
+	30% {
+		-webkit-filter: grayscale(0.6);
+	}
+	40% {
+		-webkit-filter: grayscale(0.8);
+	}
+	50% {
+		-webkit-filter: grayscale(1);
+	}
+
+	60% {
+		-webkit-filter: grayscale(0.8);
+	}
+	70% {
+		-webkit-filter: grayscale(0.6);
+	}
+	80% {
+		-webkit-filter: grayscale(0.4);
+	}
+	90% {
+		-webkit-filter: grayscale(0.2);
+	}
+	100% {
+		-webkit-filter: grayscale(0);
+	}
+}
