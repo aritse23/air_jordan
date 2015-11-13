@@ -27,25 +27,16 @@ $( document ).ready(function() {
 		});
 
 	})
+	//Toggles Nav Menu button
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+		//Toggles Nav List
+		$('.nav-list').slideToggle('slow');
+	});
 
-	//Click Home Button
-	$('.home').click(function(event){
-		event.preventDefault();
-		$('h1').animate({
-			marginTop: '2em',
-			paddingTop: '0',
-			fontSize: '2em'
-		});
-		$('h6').animate({
-			fontSize: '0.67em'
-		});
-		$('.title').animate({
-			width:'100%'
-		});
-		$('.jumpmanCTA').show('slow');
-		$('.home').hide('slow');
-		$('#main').animate({
-			top: '100%'
-		}).hide('slow');
-	})
+	
+
+
+
+
 });
