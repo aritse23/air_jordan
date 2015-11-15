@@ -78,4 +78,9 @@ $( document ).ready(function() {
 		$('#trademarks').removeClass('current');
 		$('#usage').addClass('current');
 	});
+
+	$('.blocks').click(function(event){
+		event.preventDefault();
+		$('.code').slideToggle('slow');
+	})
 });
