@@ -276,16 +276,25 @@ img {
 #trademarks {
 	display: none;
 }
+
+.wrong{
+	text-decoration: line-through;
+	color: #D20000;
+}
+.text{
+	color: #000;
+}
+
 .colours{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .hexcode{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .code{
