@@ -272,8 +272,8 @@ img {
 
 /*=============STORY=============*/
 
-/*=========TRADEMARKS==============*/
-#trademarks {
+/*=========LOGO==============*/
+#logo {
 	display: none;
 }
 
@@ -316,7 +316,12 @@ img {
 	text-decoration: none;
 	border: 3px solid black;
 }
-/*==============USAGE=============*/
-#usage {
+/*==============TYPO=============*/
+#typo {
+	display: none;
+}
+
+/*=============COLOUR=============*/
+#colour {
 	display: none;
 }
