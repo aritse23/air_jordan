@@ -43,40 +43,63 @@ $( document ).ready(function() {
 		$('#nav-icon').toggleClass('open');
 		//show story content, hide the rest
 		$('#story').show('slow');
-		$('#trademarks').hide('slow');
-		$('#usage').hide('slow');
+		$('#logo').hide('slow');
+		$('#typo').hide('slow');
+		$('#colour').hide('slow');
 		//adds current class to Story
 		$('#story').addClass('current');
-		$('#trademarks').removeClass('current');
-		$('#usage').removeClass('current');
+		$('#logo').removeClass('current');
+		$('#typo').removeClass('current');
+		$('#colour').removeClass('current');
 	});
-	$('.trademarks-butt').click(function(event){
+	$('.logo-butt').click(function(event){
 		event.preventDefault();
 		//closes list and changes burger icon
 		$('.nav-list').slideToggle('slow');
 		$('#nav-icon').toggleClass('open');
-		//show trademarks content, hide the rest
+		//show logo content, hide the rest
 		$('#story').hide('slow');
-		$('#trademarks').show('slow');
-		$('#usage').hide('slow');
-		//adds current class to trademarks
+		$('#logo').show('slow');
+		$('#typo').hide('slow');
+		$('#colour').hide('slow');
+		//adds current class to logo
 		$('#story').removeClass('current');
-		$('#trademarks').addClass('current');
-		$('#usage').removeClass('current');
+		$('#logo').addClass('current');
+		$('#typo').removeClass('current');
+		$('#colour').removeClass('current');
 	});
-	$('.usage-butt').click(function(event){
+	$('.typo-butt').click(function(event){
 		event.preventDefault();
 		//closes list and changes burger icon
 		$('.nav-list').slideToggle('slow');
 		$('#nav-icon').toggleClass('open');
-		//show usage content, hide the rest
+		//show typo content, hide the rest
 		$('#story').hide('slow');
-		$('#trademarks').hide('slow');
-		$('#usage').show('slow');
-		//adds current class to usage
+		$('#logo').hide('slow');
+		$('#typo').show('slow');
+		$('#colour').hide('slow');
+		//adds current class to typo
 		$('#story').removeClass('current');
-		$('#trademarks').removeClass('current');
-		$('#usage').addClass('current');
+		$('#logo').removeClass('current');
+		$('#typo').addClass('current');
+		$('#colour').removeClass('current');
+	});
+
+	$('.colour-butt').click(function(event){
+		event.preventDefault();
+		//closes list and changes burger icon
+		$('.nav-list').slideToggle('slow');
+		$('#nav-icon').toggleClass('open');
+		//show typo content, hide the rest
+		$('#story').hide('slow');
+		$('#logo').hide('slow');
+		$('#typo').hide('slow');
+		$('#colour').show('slow');
+		//adds current class to typo
+		$('#story').removeClass('current');
+		$('#logo').removeClass('current');
+		$('#typo').removeClass('current');
+		$('#colour').addClass('current');
 	});
 
 	$('.blocks').click(function(event){

@@ -272,20 +272,29 @@ img {
 
 /*=============STORY=============*/
 
-/*=========TRADEMARKS==============*/
-#trademarks {
+/*=========LOGO==============*/
+#logo {
 	display: none;
 }
+
+.wrong{
+	text-decoration: line-through;
+	color: #D20000;
+}
+.text{
+	color: #000;
+}
+
 .colours{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .hexcode{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .code{
@@ -307,7 +316,12 @@ img {
 	text-decoration: none;
 	border: 3px solid black;
 }
-/*==============USAGE=============*/
-#usage {
+/*==============TYPO=============*/
+#typo {
+	display: none;
+}
+
+/*=============COLOUR=============*/
+#colour {
 	display: none;
 }
