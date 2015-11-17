@@ -51,6 +51,16 @@ $( document ).ready(function() {
 		$('#logo').removeClass('current');
 		$('#typo').removeClass('current');
 		$('#colour').removeClass('current');
+		//add chosen class to Story button
+		$('.story-butt').addClass('chosen');
+		$('.logo-butt').removeClass('chosen');
+		$('.typo-butt').removeClass('chosen');
+		$('.colour-butt').removeClass('chosen');
+		//add chosen class to Story button 2
+		$('.story-butt-2').addClass('chosen');
+		$('.logo-butt-2').removeClass('chosen');
+		$('.typo-butt-2').removeClass('chosen');
+		$('.colour-butt-2').removeClass('chosen');
 	});
 	$('.logo-butt').click(function(event){
 		event.preventDefault();
@@ -67,6 +77,16 @@ $( document ).ready(function() {
 		$('#logo').addClass('current');
 		$('#typo').removeClass('current');
 		$('#colour').removeClass('current');
+		//adds chosen class to logo button
+		$('.story-butt').removeClass('chosen');
+		$('.logo-butt').addClass('chosen');
+		$('.typo-butt').removeClass('chosen');
+		$('.colour-butt').removeClass('chosen');
+		//add chosen class to logo button 2
+		$('.story-butt-2').removeClass('chosen');
+		$('.logo-butt-2').addClass('chosen');
+		$('.typo-butt-2').removeClass('chosen');
+		$('.colour-butt-2').removeClass('chosen');
 	});
 	$('.typo-butt').click(function(event){
 		event.preventDefault();
@@ -83,6 +103,16 @@ $( document ).ready(function() {
 		$('#logo').removeClass('current');
 		$('#typo').addClass('current');
 		$('#colour').removeClass('current');
+		//adds chosen class to typo button
+		$('.story-butt').removeClass('chosen');
+		$('.logo-butt').removeClass('chosen');
+		$('.typo-butt').addClass('chosen');
+		$('.colour-butt').removeClass('chosen');
+		//add chosen class to typo button 2
+		$('.story-butt-2').removeClass('chosen');
+		$('.logo-butt-2').removeClass('chosen');
+		$('.typo-butt-2').addClass('chosen');
+		$('.colour-butt-2').removeClass('chosen');
 	});
 
 	$('.colour-butt').click(function(event){
@@ -95,11 +125,117 @@ $( document ).ready(function() {
 		$('#logo').hide('slow');
 		$('#typo').hide('slow');
 		$('#colour').show('slow');
-		//adds current class to typo
+		//adds current class to colour
 		$('#story').removeClass('current');
 		$('#logo').removeClass('current');
 		$('#typo').removeClass('current');
 		$('#colour').addClass('current');
+		//adds chosen class to colour button
+		$('.story-butt').removeClass('chosen');
+		$('.logo-butt').removeClass('chosen');
+		$('.typo-butt').removeClass('chosen');
+		$('.colour-butt').addClass('chosen');
+		//add chosen class to colour button 2
+		$('.story-butt-2').removeClass('chosen');
+		$('.logo-butt-2').removeClass('chosen');
+		$('.typo-butt-2').removeClass('chosen');
+		$('.colour-butt-2').addClass('chosen');
+	});
+
+	//DESKTOP SIZED NAV BUTTON PRESSING
+	$('.story-butt-2').click(function(event){
+		event.preventDefault();
+		//show story content, hide the rest
+		$('#story').show();
+		$('#logo').hide();
+		$('#typo').hide();
+		$('#colour').hide();
+		//adds current class to Story
+		$('#story').addClass('current');
+		$('#logo').removeClass('current');
+		$('#typo').removeClass('current');
+		$('#colour').removeClass('current');
+		//add chosen class to Story button
+		$('.story-butt').addClass('chosen');
+		$('.logo-butt').removeClass('chosen');
+		$('.typo-butt').removeClass('chosen');
+		$('.colour-butt').removeClass('chosen');
+		//add chosen class to Story button 2
+		$('.story-butt-2').addClass('chosen');
+		$('.logo-butt-2').removeClass('chosen');
+		$('.typo-butt-2').removeClass('chosen');
+		$('.colour-butt-2').removeClass('chosen');
+	});
+	$('.logo-butt-2').click(function(event){
+		event.preventDefault();
+		//show logo content, hide the rest
+		$('#story').hide();
+		$('#logo').show();
+		$('#typo').hide();
+		$('#colour').hide();
+		//adds current class to logo
+		$('#story').removeClass('current');
+		$('#logo').addClass('current');
+		$('#typo').removeClass('current');
+		$('#colour').removeClass('current');
+		//adds chosen class to logo button
+		$('.story-butt').removeClass('chosen');
+		$('.logo-butt').addClass('chosen');
+		$('.typo-butt').removeClass('chosen');
+		$('.colour-butt').removeClass('chosen');
+		//add chosen class to logo button 2
+		$('.story-butt-2').removeClass('chosen');
+		$('.logo-butt-2').addClass('chosen');
+		$('.typo-butt-2').removeClass('chosen');
+		$('.colour-butt-2').removeClass('chosen');
+
+	});
+	$('.typo-butt-2').click(function(event){
+		event.preventDefault();
+		//show typo content, hide the rest
+		$('#story').hide();
+		$('#logo').hide();
+		$('#typo').show();
+		$('#colour').hide();
+		//adds current class to typo
+		$('#story').removeClass('current');
+		$('#logo').removeClass('current');
+		$('#typo').addClass('current');
+		$('#colour').removeClass('current');
+		//adds chosen class to typo button
+		$('.story-butt').removeClass('chosen');
+		$('.logo-butt').removeClass('chosen');
+		$('.typo-butt').addClass('chosen');
+		$('.colour-butt').removeClass('chosen');
+		//add chosen class to typo button 2
+		$('.story-butt-2').removeClass('chosen');
+		$('.logo-butt-2').removeClass('chosen');
+		$('.typo-butt-2').addClass('chosen');
+		$('.colour-butt-2').removeClass('chosen');
+	});
+
+	$('.colour-butt-2').click(function(event){
+		event.preventDefault();
+		//show colour content, hide the rest
+		$('#story').hide();
+		$('#logo').hide();
+		$('#typo').hide();
+		$('#colour').show();
+		//adds current class to colour
+		$('#story').removeClass('current');
+		$('#logo').removeClass('current');
+		$('#typo').removeClass('current');
+		$('#colour').addClass('current');
+		//adds chosen class to colour button
+		$('.story-butt').removeClass('chosen');
+		$('.logo-butt').removeClass('chosen');
+		$('.typo-butt').removeClass('chosen');
+		$('.colour-butt').addClass('chosen');
+		//add chosen class to colour button 2
+		$('.story-butt-2').removeClass('chosen');
+		$('.logo-butt-2').removeClass('chosen');
+		$('.typo-butt-2').removeClass('chosen');
+		$('.colour-butt-2').addClass('chosen');
 	});
 
 	$('.blocks').click(function(event){

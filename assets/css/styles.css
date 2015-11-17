@@ -102,7 +102,9 @@ img {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 80px;
 	z-index: 5000;
 }
 
@@ -152,39 +154,6 @@ img {
 	position: relative;	
 	width: 100%-10px;
 	margin-left: 10px;
-}
-
-.nav-list{
-	display: none;
-	position: relative;
-	background-color: rgba(0,0,0, 0.5);
-}
-.nav-list ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-}
-.nav-list li {	
-}
-.nav-butt{
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	padding: 10px 0 10px 0;
-	width: 100%;
-}
-.nav-butt:hover {
-	background: rgba(0,0,0,0.5);
-	color: #D20000;
-}
-
-.nav-butt:active {
-	background: rgba(0,0,0,0.5);
-	color: #D20000;
 }
 
 #nav-icon{
@@ -259,6 +228,68 @@ img {
   width: 0%;
   left: 50%;
 }
+/*================NAV-LIST===============*/
+.nav-list{
+	display: none;
+	position: relative;
+	background-color: rgba(0,0,0, 0.5);
+}
+.nav-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-butt{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 0 10px 0;
+	width: 100%;
+}
+.nav-butt:hover {
+	background: rgba(0,0,0,0.5);
+	color: #D20000;
+}
+
+.nav-butt:active {
+	background: rgba(0,0,0,0.5);
+	color: #D20000;
+}
+
+/*================NAV-LIST_DESKTOP===============*/
+
+.nav-list-desktop{
+	display: none;
+	position: absolute;
+	margin-top: 85px;
+	margin-left: auto;
+	margin-right: 100px;
+}
+
+.nav-list-desktop ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+}
+
+.nav-butt-desktop{
+	float: left;
+	width: 150px;
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+	padding: 20px 0 20px 0;
+}
+
+.chosen {
+	text-decoration: underline;
+}
 
 /*==============CONTENT================*/
 .content {
@@ -283,6 +314,17 @@ img {
 }
 .text{
 	color: #000;
+}
+
+
+/*==============TYPO=============*/
+#typo {
+	display: none;
+}
+
+/*=============COLOUR=============*/
+#colour {
+	display: none;
 }
 
 .colours{
@@ -314,14 +356,65 @@ img {
 	display: block;
 	padding: 35px;
 	text-decoration: none;
-	border: 3px solid black;
-}
-/*==============TYPO=============*/
-#typo {
-	display: none;
+	border: 1px solid black;
+	margin-top: 20px;
+	margin-bottom: 2px;
 }
 
-/*=============COLOUR=============*/
-#colour {
-	display: none;
+/*=============MEDIA QUIERIES============*/
+@media screen and (min-width: 761px) {
+	
+	.content{
+		padding-left: 100px;
+		margin-right: 50px;
+		padding-bottom: 35px;
+	}
+	.jumpmanCTA{
+		position: absolute;
+		top: 30%;
+		left: 35%;
+		max-width: 30%;
+		-webkit-animation: colorPulse 2s infinite;
+
+	}
+}
+
+@media screen and (min-width: 870px) {
+	#main {
+		background-image: url(../img/michael_jordan.jpg);
+		background-size: cover;
+	}
+	.content{
+		max-width: 720px;		
+		margin-top: 75px;
+		margin-left: 100px;
+		padding-right: 100px;
+		background-color: rgba(255,255,255,0.75);
+	}
+	#nav-icon, .nav-list, .nav-list ul{
+		display: none;
+	}
+	
+	.nav-list-desktop{
+		display: block;
+		float: left;
+		position: relative;
+		padding-right: 50px;
+		margin-left: 5%;
+		padding-bottom: 20vh;
+		border-right: 2px solid #000;
+	}
+
+
+}
+
+@media screen and (min-width: 1200px) {
+	.title {
+		margin-right: 250px;
+	}
+	.title hr{
+		width: 60%;
+		margin: 0.5em 20% 0.5em 20%;
+		padding: 0;
+	}
 }
