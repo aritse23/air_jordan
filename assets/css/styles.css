@@ -27,6 +27,13 @@ img {
 	width: 100%
 }
 
+small {
+	position: absolute;
+	color: #ddd;
+	margin-left: 10px;
+	bottom: 10px;
+}
+
 /*==========CUSTOM SCROLLBAR=========*/
 .custom_scrollbar {
 	overflow: scroll;
@@ -402,7 +409,7 @@ img {
 
 @media screen and (min-width: 870px) {
 	#main {
-		background-image: url(../img/michael_jordan.jpg);
+		background-image: url(../img/michael_jordan-min.jpg);
 		background-size: cover;
 	}
 	.content{
